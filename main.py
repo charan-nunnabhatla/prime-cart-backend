@@ -10,6 +10,7 @@ conn = sqlite3.connect(path, check_same_thread=False)
 app = Flask(__name__)
 CORS(app)
 
+#post methods to return selected products form db
 @app.post('/about' )
 def getTitle():
     data = request.json
